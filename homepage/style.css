@@ -1,0 +1,82 @@
+body {
+    background: #fefefe;
+    color: #333
+}
+
+.sectionHeader,
+.diaryHeader {
+    color: #1460aa
+}
+
+.header {
+    color: yellow
+}
+
+.heading {
+    columns: #00487c;
+}
+
+.link {
+    color: #0496ff
+}
+
+.thirdHeader {
+    color: #0496ff
+}
+
+.about {}
+
+.paragraph {
+    padding-left: 16px;
+}
+
+main {
+    width: 100%;
+    max-width: 700px;
+    margin: 32px auto;
+    /* overflow:hidden; jezeli cos wychodzi poza maksymalne ustalone ramy to  utnie to zwidoku badz rozszerzy rodzica */
+    /* clear: right | left | tez rozszerzy rodzica*/
+    /* overflow:scroll; jezeli cos wychodzi poza maksymalne ustalone ramy to  pokaze scrolla */
+    /* vw i vh - jednostka niezlaezna odnosnie do szerokosci ekranu */
+    /*marginem mozna fajnie srodkowac  margin: 32px auto
+    <div> - uzywamy gdy chcemy cos opakowac kiedy nie ma znacznika semantycznego odpowiedniego np <header>
+    
+    */
+}
+
+.box,
+.boxTests {
+    /* box-sizing  -- border-box  -- od wysokosci i szerokosci ciała odejmowane sa wszystkie rzeczy od bordera włącznie do ciała
+                   -- content-box  -- do wysokości szerokości ciała dodawane są paddingi i bordery
+        position -- domyślnie jest static wszedzie 
+                 -- relative element który ma taka wartosc staje sie mapa dla innych elementow z podrzędnymi wartościami
+                 -- absolute  - przyklejony do gornej lewej krawedzi rodzica który ma własność relative
+                 -- fixed -- przyklej element do okna zjada szerokość (robi ilement innline (rownlogle z podrzednym)
+                 --sticky -- element przyklei sie dopiero kiedy dojedzie do krawedzi tzn bedzie jak fixed- nie wszedzie jeszcze wspierane
+                 -- float nie sluzy do budowania layoutow słuzy do opływania elmentów
+        top: 10px - odsuwają od rodzica o zadane parametry
+        left: 50% || right || bottom || top- od której strony i kiedy ma zaczynać sie element
+        -- wykorzystujemy np do podpisow zdjecia wedle position relative -> absolute
+
+        z-index: number okreslanie warstw ktora mają byc po kolei wyswietlane
+        innline: block (domyslna wartosc)
+        float: left || right - wszystko ma być po lewej || prawej stronie elmentu uzywamy tylko kiedy elmenty maja sie opływac
+
+    
+    */
+    width: 100px;
+    height: 100px;
+    background: yellowgreen;
+    padding: 10px;
+    border: 10px solid red;
+    box-sizing: border-box;
+}
+
+.box {
+    z-index: 2
+}
+
+.boxTest {
+    top: 30px;
+    background: brown;
+}
