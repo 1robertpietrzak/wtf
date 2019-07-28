@@ -1,0 +1,21 @@
+Lekcja 4.05. Block – Element – Modifier
+    BEM - pisanie stylow pod kątem komponentów 
+    block__element--modifier
+    Dlaczego?
+
+    * Złożoność styli i haos w kodzie css bem pozwoli tego uniknac i zaprowadzic porzadek
+
+
+Lekcja 4.06 DOM
+    DOM - obiekt dom to złożony w przegladarce html
+
+    w pracy z domem warto stworzyć znacznik__element--js zeby oznaczac dodatkowo
+
+    document.querySelector - zwraca pojedynzy Element
+    document.querySelector - zwraca wszystkie pasujace elementy jako NodeList
+
+        obiekty zawieraja
+            innerHtml  - zwiera zawartosc znacznika html
+
+        obiekty pozwalają na:
+            modyfikacje zawartości znaczników html poprzez wpisanie do innerHTML tekstu badz htmla
