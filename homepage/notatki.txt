@@ -19,3 +19,13 @@ Lekcja 4.06 DOM
 
         obiekty pozwalają na:
             modyfikacje zawartości znaczników html poprzez wpisanie do innerHTML tekstu badz htmla
+
+Lekcja 4.08 Praca domowa
+
+    - Załóż konto na gihub
+    - Dostosowac style aby ograniczyc szerokosc tresci i ja wyśrodkować
+    - Dostosuj projekt do BEM
+    - stworzyc element z wybrana klasa i uzupelnic jego tresc za pomoca js
+
+Lekcja 5.01 Opis pracy domowej
+    - dorzucenie BEMa dla jednej z sekcji

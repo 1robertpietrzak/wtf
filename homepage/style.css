@@ -3,8 +3,8 @@ body {
     color: #333
 }
 
-.sectionHeader,
-.diaryHeader {
+.home__about--sectionHeader,
+.home__pamietniczek--sectionHeader {
     color: #1460aa
 }
 
@@ -20,14 +20,18 @@ body {
     color: #0496ff
 }
 
-.thirdHeader {
+.home__pamietniczek--header {
     color: #0496ff
 }
 
-.about {}
+.home__about {
+    overflow: hidden;
+}
 
-.paragraph {
+.home__about--paragraph,
+.home__pamiatniczek--paragraph {
     padding-left: 16px;
+    text-align: left;
 }
 
 main {
@@ -44,8 +48,7 @@ main {
     */
 }
 
-.box,
-.boxTests {
+.home__about--box {
     /* box-sizing  -- border-box  -- od wysokosci i szerokosci ciała odejmowane sa wszystkie rzeczy od bordera włącznie do ciała
                    -- content-box  -- do wysokości szerokości ciała dodawane są paddingi i bordery
         position -- domyślnie jest static wszedzie 
@@ -64,12 +67,15 @@ main {
 
     
     */
-    width: 100px;
-    height: 100px;
+    width: 100%;
+    max-width: 200px;
+    height: 200px;
     background: yellowgreen;
     padding: 10px;
     border: 10px solid red;
+    margin-right: 8px;
     box-sizing: border-box;
+    float: left;
 }
 
 .box {
@@ -79,4 +85,5 @@ main {
 .boxTest {
     top: 30px;
     background: brown;
+    padding: 10px;
 }

@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="pl">
 
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,7 +10,8 @@
     <link href="style.css" rel="stylesheet" type="text/css">
 </head>
 
-<body>
+<body class="home">
+
     <main>
         <header>
             <h1>
@@ -17,35 +19,50 @@
             </h1>
         </header>
 
-        <section class="about">
-            <div class="box">Co ten fronted</div>
-            <h2 class="sectionHeader">
+        <section class="home__about">
+            <h2 class="home__about--mainTitle">
                 Opis obrazu
             </h2>
-            <p class="paragraph">
-                Obraz „Guernica” to dzieło hiszpańskiego malarza Pabla Picassa. Malowidło powstało w 1937 r. i było reakcją na zbombardowanie hiszpańskiego miasta Guernica. Picasso przez to dzieło wyraził swój sprzeciw wobec wojny i tragedii niewinnych ludzi. Obecnie
-                znajduje się ono w Muzeum Królowej Zofii w Madrycie. „Guernica” została wykonana w technice oleju na płótnie. Przedstawia chaos, ucieczkę, rozpacz, a także kłębowisko ciał i zwierząt.
+            <div class="home__about--box">Co ten fronted</div>
+            <p class="home__about--paragraph">
+                Opis obrazu jest przedstawianiem świata widzianego przez artystę. Zadaniem autora opisu jest więc zarówno opisanie jego elementów, czyli zaprezentowania tematu obrazu, jak też sposobu przedstawienia tej rzeczywistości przez artystę. W zależności od tego,
+                co obraz przedstawia, wyróżnić możemy opis statyczny i dynamiczny. Pierwszy z nich dotyczy np. martwej natury, pejzażu, drugi zaś – scenki rodzajowej, np. połowu ryb. Autor opisu powinien w taki sposób opisać obraz, by czytelnik miał pełne
+                wyobrażenie tego, co obraz przedstawia. Dlatego opisując obraz należy wziąć po uwagę wszystkie tworzące go elementy
             </p>
         </section>
 
-        <section class="pamietniczek">
-            <h2 class="sectionHeader">
+        <section class="home__pamietniczek">
+            <h2 class="home__pamietniczek--mainTitle">
                 Pamietniczek
             </h2>
-            <section class="pamietniczek">
-                <h3 class="thirdHeader">Jak stworzyc prawidłowego htmla</h3>
+            <section class="home__pamietniczek">
+                <h3 class="home__pamietniczek--header">Jak stworzyc prawidłowego htmla</h3>
 
-                <p class="paragraph">
-                    blablavla
+                <p class="home__pamiatniczek--paragraph">
+                    HTML (HyperText Markup Language) to język opisu strony. Dokument HTML jest plikiem tekstowym, który oprócz tekstu widocznego na stronie zawiera znaczniki zawierające polecenia dla przeglądarek klienta, opisują one wygląd i funkcje elementów strony web.
+                    Język HTML przechodził już wielokrotnie modyfikacje. Dodawane są nowe polecenia i funkcje. Specyfikacja HTML zmierza do tego, aby strony pisane w tym języku były tak samo prezentowane w różnych przeglądarkach i na różnych komputerach.
+                    Mimo standaryzacji, niektóre przeglądarki inaczej interpretują te same polecenia. Aby uniknąć błędów autorzy stron muszą zapoznać się z różnicami w składni. Opisy znaczników są tu: Tagi HTML Znajomość HTML-a jest potrzebna nawet wtedy,
+                    gdy tworzy się strony w edytorach graficznych, typu FrontPage. Edytor taki tworzy dokument HTML podobnie jak w Wordzie, można pisać tekst i osadzać obrazki bez wnikania w kod źródłowy. Jednak źródło HTML zawiera nadmiarowy kod, niepotrzebne
+                    elementy formatowania, co powoduje, że strona się wolno ładuje. Autor strony ma pełną możliwość edycji tylko na poziomie kodu źródłowego HTML. W FrontPage można się przełączyć, wybierając odpowiednią zakładkę HTML. Do edycji lepiej
+                    jest użyć gotowego edytora HTML z kolorowaniem składni. Programiści chętnie wybierają polski program Pajączek.
                 </p>
             </section>
-            <section class="pamietniczek">
-                <h3 class="thirdHeader">
+            <section class="home__pamietniczek">
+                <h3 class="home__pamietniczek--header">
                     Czy nagrywanie szkolenia to prosta sprawa?
                 </h3>
-                <p class="paragraph">
-                    cccccc
+                <p class="home__pamiatniczek--paragraph">
+                    Od czasu gdy pojawiły się techniczne możliwości ludzie utrwalają istotne chwile ze swojego życia na zdjęciach i pod postacią filmów. Obecnie technika jest tak zaawansowana, że przy pomocy zwykłych smartfonów można nagrywać i fotografować z dużo lepszymi
+                    parametrami, niż przy użyciu zaawansowanych i drogich sprzętów przed kilkunastu laty. Postęp w fotografii i nagrywaniu obrazów jest bardzo duży, widać to dobrze po parametrach urządzeń do tego służących. Co roku zwiększa się rozdzielczość
+                    nagrywanych filmów oraz matryc, oprogramowanie ma coraz bardziej wydajne algorytmy, więc i użytkownikom jest coraz prościej. Bardzo wiele osób wykorzystuje do tych celów smarfony, ograniczając się wtedy do noszenia jednego, wielofunkcyjnego
+                    urządzenia, za pomocą którego można telefonować, robić zdjęcia, kręcić filmy a w razie potrzeby też zagrać. Jeśli jednak ktoś będzie potrzebował sprzętu bardziej zaawansowanego, to również znajdzie spory jego wybór w elektronicznych
+                    sklepach.
                 </p>
+            </section>
+            <section class="home__pamietniczek">
+                <h3 class="home__pamietniczek--header home__pamietniczek--header-js">
+                    Modyfikacja DOM
+                </h3>
             </section>
         </section>
 
@@ -53,6 +70,7 @@
             Strona domowa Roberta Pietrzaka. Powstała w ramach szkolenia WTF: Co ten frontend.
         </footer>
     </main>
+    <script src="main.js"></script>
 </body>
 
 </html>
