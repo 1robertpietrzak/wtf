@@ -29,3 +29,6 @@ Lekcja 4.08 Praca domowa
 
 Lekcja 5.01 Opis pracy domowej
     - dorzucenie BEMa dla jednej z sekcji
+
+Lekcja 5.03 
+    - w zakładce network można wyłaczyć przechowywanie cash dla strony
