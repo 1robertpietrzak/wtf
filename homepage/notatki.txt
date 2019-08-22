@@ -32,3 +32,25 @@ Lekcja 5.01 Opis pracy domowej
 
 Lekcja 5.03 
     - w zakładce network można wyłaczyć przechowywanie cash dla strony
+
+Lekcja 5.05 HTML: Listy, tabele, definicje
+List można domyślnie zagnieżdzać pod sobą
+    ul - lista nieporzadkowana (bez auto numeracji)
+    ol- lista z autonumeracją
+    dl - lista definicji/przypisów wskazówek
+        <dl>
+            <dt></dt> - wskazowka
+            <dd></dd> - tresc wskazowki
+    li - wiersz
+    nawigacja - poniższy przykład tworzy nawigacje
+    <nav>  
+        <li><a href="podstrona.html">Podstrona</a></li>
+    </nav>
+
+    <table>
+        <tr> - wiersz table row
+        <td> - komórka
+        <thead> - naglwek
+        <th> - komorka w nagłowki
+        <tbody> - 
+        <caption> - opis tabeli
