@@ -1,0 +1,35 @@
+.flex {
+    border: 4px sold;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+}
+
+.flex__item {
+    width: 400px;
+    border: 3px solid #ffffff;
+    padding: 16px;
+    text-align: center;
+    background: #ffc835;
+    color: #642677;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+body {
+    background: #2e2240;
+    color: #ffffff;
+}
+
+html {
+    box-sizing: border-box;
+}
+
+*,
+*:after,
+*:before {
+    box-sizing: inherit;
+}

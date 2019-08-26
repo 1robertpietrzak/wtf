@@ -1,5 +1,6 @@
 body {
-    background: #fefefe;
+    background-color: #FEE140;
+    background-image: linear-gradient(90deg, #FEE140 0%, #FA709A 100%);
     color: #333
 }
 
@@ -20,9 +21,19 @@ body {
     color: #0496ff
 }
 
+.home {
+    margin: 0px;
+}
+
 .home__nav {
     display: flex;
+    background-color: #C4AF9A;
+    width: 100%;
     justify-content: center;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0px;
+    z-index: 1;
 }
 
 .home__nav--item {
