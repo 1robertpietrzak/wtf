@@ -20,6 +20,24 @@ body {
     color: #0496ff
 }
 
+.home__nav {
+    display: flex;
+    justify-content: center;
+}
+
+.home__nav--item {
+    background: #B7B5B3;
+    text-align: center;
+    list-style: none;
+    flex-basis: 100px;
+    border: 2px solid red;
+}
+
+.home__nav--description {
+    color: #141301;
+    padding: 10px;
+}
+
 .home__pamietniczek--header {
     color: #0496ff
 }
@@ -76,6 +94,8 @@ main {
     margin-right: 8px;
     box-sizing: border-box;
     float: left;
+    position: sticky;
+    top: 0px;
 }
 
 .box {

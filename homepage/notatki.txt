@@ -54,3 +54,24 @@ List można domyślnie zagnieżdzać pod sobą
         <th> - komorka w nagłowki
         <tbody> - 
         <caption> - opis tabeli
+
+
+Lekcja 5.06 Normalizacja vs reset
+    - reset jest nie zalecany ale możliwy np. uniemoliwia korzystanie ze strony niepołnosprawnym (np. nawigacja tabem)
+    - normalizacja zestawstyli który naprawia błędy w obsludze css które wystepuja pomiedzy przegladarkami
+
+Lekcja 5.07 Flexbox
+    - własność główna display: flex
+    - flex-direction: row  -->
+                    : column |
+                            \/  
+                    : row-reverse - odprawej do lewej
+                    : column-reverse    - od dołu do góry
+    - flex-wrap: no-wrap - domyślnie
+                : wrap - ustawiona szerokość, wykość jest respektowana a element zawijane                
+    -flex-flow: ustawia flex-direction i flex-wrap;
+    -justify-content: słuzy do ustawiania elementów wzdłów osi flex-direction
+                    : flex-start - domyślna 
+                    : flex-end - prawa dolna krawdz
+                    : center
+    - to nowy system pozycjonowania elementów pracujący w osi poziomej i pionowej (wiersz kolumna)
