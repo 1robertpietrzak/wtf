@@ -1,3 +1,13 @@
 const thirdHeaderJs = document.querySelector('.home__pamietniczek--header-js');
 console.log(thirdHeaderJs);
 thirdHeaderJs.innerHTML = thirdHeaderJs.innerHTML + ' przez JS.'
+
+
+function promptt() {
+    let imie = prompt("Jak masz na imie?", "");
+    document.querySelector('.home__pamietniczek--header-js');
+    if (imie) {
+        console.log(imie);
+        thirdHeaderJs.innerHTML = thirdHeaderJs.innerHTML + ' Przegladasz super strone: ' + imie + ' .';
+    }
+}

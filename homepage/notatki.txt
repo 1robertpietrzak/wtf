@@ -67,11 +67,67 @@ Lekcja 5.07 Flexbox
                             \/  
                     : row-reverse - odprawej do lewej
                     : column-reverse    - od dołu do góry
-    - flex-wrap: no-wrap - domyślnie
+    - flex-wrap : no-wrap - domyślnie
                 : wrap - ustawiona szerokość, wykość jest respektowana a element zawijane                
     -flex-flow: ustawia flex-direction i flex-wrap;
     -justify-content: słuzy do ustawiania elementów wzdłów osi flex-direction
                     : flex-start - domyślna 
                     : flex-end - prawa dolna krawdz
                     : center
+                    : space-between zostawia przestrzenie pomiedzy elementami
+                    : space-around jak wyzej ale zostawia jesczepaddingi od lewej i prawej
+
+    align-content:
     - to nowy system pozycjonowania elementów pracujący w osi poziomej i pionowej (wiersz kolumna)
+
+    align-items: dopasowanie sasiadującyh elementów do kreślonego stylem 
+    align-self: pozycjonowanie pojedynczego elementu w weirszu
+    order: kolejnoscelementu domyślnie 0 dla każdego (kolejnność kafli)
+    flex-grow: współczynnik mówiący jak szbko element ma rosnąć w stosunku do innych elementow
+    flex-shrink: jak mocno maja sie kurczyć
+    flex-basis: rozmiar bazowy
+    flex: flex-grow flex-shrink flex-basis
+
+Lekcja 5.08 Tła
+background-position: center center; tło chowane jest od brzegów kiedyzmniejsza sie strone. Potarza sie także odśrodka w każdym kierunku.
+backgrount-attachment: scroll - tło idzie razem ze stroną(przyklejone do strony)
+                     : fixed - nie rusza sie tło mimo scrollowania strony
+                     : local - tło scrolluje sie razem z tereścią (zrobic overflow: hiddden)
+
+background-clip: - mówi w któym miejscu tło powinno być cięte
+background-size: contain - cały obrazek zawieta sie w stronie www.
+               : cover - slauje tak żeby obrazek wyswietlał sie zawsze i dobrze wyskalowany
+ 
+Lekcja 5.09 
+    - Okienko z zapytaniem o imie i nazwisko i wyswietleniu
+
+
+Lokcja 6.01 - Formularze
+    <input - słuzy do wprowadzania danych
+        name - nazwa elementu
+        id - id elementu
+        type - typ przyjmowanej wartosci (text, radio, checkbox, number, tel, email, range, password, file, submit )
+        value - domyslna wartosc
+        placeholder - pojawia sie kiedy pole jest puste (placeholder nie zastepuje label)
+        checked - domyslnie zaznaczony radiobutton
+        typ number - pojawiaja sie kontrolki do zwiekszania/zmniejszania wartości
+        typ range - suwak 
+            max - maxymalna wartosc suwaka
+            min - minimalna warosc suwaka            
+        typ submit - przycisk do wysyłaniaa formularza
+            action - adres uslugi do ktorej wysyłany jest formularz
+    <label - legenda pozwala
+        for - nzwa inputu
+
+    <fieldset  - ramka na input
+        <legend - nazwa tej ramki
+
+    <select  - rownowazny z inputem
+        <option - wartosci do wyburu w select (domyślnie pierwszy option jest zaznaczony)  
+
+    <textarea - input dla duzego teksu (domyslnie skalowalny). Nie posiada atrybutu walue, bierze tekst ze srodka. 
+                Domyślna metoda to GET
+
+Dobra praktyką jest otagowanie pojedynczych par input label w znacznik <p> (po kliknieciu w label uzytkownik jet przenoszony do inputa)
+Radiobuttony grupujemy za pomocą name jeżeli dwa radiobuttony
+mają to samo 'name' można wybrac jeden sposrod nich, jezeli name jest rozne mozna wybac wiele radiobuttonow
