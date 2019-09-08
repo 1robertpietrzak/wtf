@@ -11,3 +11,11 @@ function promptt() {
         thirdHeaderJs.innerHTML = thirdHeaderJs.innerHTML + ' Przegladasz super strone: ' + imie + ' .';
     }
 }
+
+
+
+const homeNaviButton = document.querySelector('.home_miniNav--button--js');
+homeNaviButton.addEventListener('click', (e) => {
+    const homeNav = document.querySelector('.home__nav--js')
+    homeNav.classList.toggle('home__mininav');
+})

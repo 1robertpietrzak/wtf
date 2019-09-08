@@ -34,11 +34,8 @@ body {
 
 .home__nav {
     display: flex;
-    background-color: #C4AF9A;
     width: 100%;
     justify-content: center;
-    position: -webkit-sticky;
-    position: sticky;
     top: 0px;
     z-index: 1;
 }
@@ -47,7 +44,7 @@ body {
     background: #B7B5B3;
     text-align: center;
     list-style: none;
-    flex-basis: 100px;
+    padding: 8px;
     border: 2px solid red;
 }
 
@@ -64,6 +61,10 @@ body {
     overflow: hidden;
 }
 
+.home_miniNav--button {
+    display: none;
+}
+
 .home__about--paragraph,
 .home__pamiatniczek--paragraph {
     padding-left: 16px;
@@ -74,6 +75,7 @@ main {
     width: 100%;
     max-width: 700px;
     margin: 32px auto;
+    margin-top: 62px;
     /* overflow:hidden; jezeli cos wychodzi poza maksymalne ustalone ramy to  utnie to zwidoku badz rozszerzy rodzica */
     /* clear: right | left | tez rozszerzy rodzica*/
     /* overflow:scroll; jezeli cos wychodzi poza maksymalne ustalone ramy to  pokaze scrolla */
@@ -84,12 +86,22 @@ main {
     */
 }
 
+.nav__header {
+    background-color: #C4AF9A;
+    min-height: 48px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1;
+}
+
 .home__about--box {
     /* box-sizing  -- border-box  -- od wysokosci i szerokosci ciała odejmowane sa wszystkie rzeczy od bordera włącznie do ciała
                    -- content-box  -- do wysokości szerokości ciała dodawane są paddingi i bordery
         position -- domyślnie jest static wszedzie 
                  -- relative element który ma taka wartosc staje sie mapa dla innych elementow z podrzędnymi wartościami
-                 -- absolute  - przyklejony do gornej lewej krawedzi rodzica który ma własność relative
+                 -- absolute  - przyklejony do gornej lewej krawedzi rodzica który ma własność relative (pozwala na sztywno wystylować element)
                  -- fixed -- przyklej element do okna zjada szerokość (robi ilement innline (rownlogle z podrzednym)
                  --sticky -- element przyklei sie dopiero kiedy dojedzie do krawedzi tzn bedzie jak fixed- nie wszedzie jeszcze wspierane
                  -- float nie sluzy do budowania layoutow słuzy do opływania elmentów
@@ -126,9 +138,32 @@ main {
     padding: 10px;
 }
 
-@media screen and (max-width: 640px) {
+@media screen and (max-width: 1000px) {
     .home_grid {
         grid-template-columns: 1fr;
-        background: red;
+    }
+    .home_miniNav--button {
+        position: absolute;
+        right: 16px;
+        top: 16px;
+        display: inline;
+        background: none;
+        border: none;
+    }
+    .home__nav {
+        display: none;
+    }
+    .home__nav--item {
+        margin-left: 48px;
+        margin-right: 48px;
+    }
+    .home__mininav {
+        display: flex;
+        flex-direction: column;
+        margin-top: 48px;
+        padding-bottom: 16px;
+    }
+    .home__nav--item {
+        margin-top: 4px;
     }
 }

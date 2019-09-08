@@ -187,3 +187,18 @@ media future - podajemy w atrybutach znacznka @madia
 w mdia-future mamy tez operatory logincze jaki and not..
 mobile-first - (sposóbp pracy)zaczynamy od stylowania dla wersji mobilnej, nastepnie za pomocą media-queries zaczynamy robic design dla przegladarki
 Device toolbar - umożliwia podglad jak na laptopie/ tablecie / komórce oraz obracanie.
+
+
+Lekcja 6.06 Js Eventy
+Bez notatek nic odkrywczego
+
+
+Lekvja 6.07 - Hamburger menu
+Sprawdzanie czy elementy maja jakieś klasy css w js. przy nazwie klasy NIE podajemy . Za pomoca poniżej własniości edytujemy na żywo własności elementu.
+element.classList.  
+                    add
+                    remove
+                    toggle
+                    contains
+
+
