@@ -166,3 +166,24 @@ Grid nie zastępuje flexboxa ale świetnie sie z nim uzupełnia. Gridem budować
                 <row-end
                 <column-start
                 <column-end
+
+
+Lekcja 6.04 CSS Media queries
+
+RWD - Responsive web design
+
+@media - steruje tym co ma sie dziać na danej rozdzielczości
+        - screen - stosuj tylko na ekranie
+        - print - tylko przy drukowaniu
+        -all
+
+media future - podajemy w atrybutach znacznka @madia
+    min-width
+    max-width
+    color
+    aspect-radio
+    orientation
+
+w mdia-future mamy tez operatory logincze jaki and not..
+mobile-first - (sposóbp pracy)zaczynamy od stylowania dla wersji mobilnej, nastepnie za pomocą media-queries zaczynamy robic design dla przegladarki
+Device toolbar - umożliwia podglad jak na laptopie/ tablecie / komórce oraz obracanie.

@@ -12,9 +12,15 @@
 
 <body class="home">
     <nav class="home__nav">
-        <li class="home__nav--item"><a class="home__nav--description" href="flexbox.html"> Flexbox </a></li>
-        <li class="home__nav--item"><a class="home__nav--description" href="https://github.com/1robertpietrzak/wtf"> Github </a></li>
-        <li class="home__nav--item"><button class="home__nav--description" onclick="promptt()"> Niespodzianka </button></li>
+        <li class="home__nav--item">
+            <a class="home__nav--description" href="flexbox.html"> Flexbox </a>
+        </li>
+        <li class="home__nav--item">
+            <a class="home__nav--description" href="https://github.com/1robertpietrzak/wtf"> Github </a>
+        </li>
+        <li class="home__nav--item">
+            <button class="home__nav--description" onclick="promptt()"> Niespodzianka </button>
+        </li>
     </nav>
     <main>
         <header>
@@ -38,35 +44,37 @@
             <h2 class="home__pamietniczek--mainTitle">
                 Pamietniczek
             </h2>
-            <section class="home__pamietniczek">
-                <h3 class="home__pamietniczek--header">Jak stworzyc prawidłowego htmla</h3>
+            <div class="home_grid">
+                <section class="home__pamietniczek">
+                    <h3 class="home__pamietniczek--header">Jak stworzyc prawidłowego htmla</h3>
 
-                <p class="home__pamiatniczek--paragraph">
-                    HTML (HyperText Markup Language) to język opisu strony. Dokument HTML jest plikiem tekstowym, który oprócz tekstu widocznego na stronie zawiera znaczniki zawierające polecenia dla przeglądarek klienta, opisują one wygląd i funkcje elementów strony web.
-                    Język HTML przechodził już wielokrotnie modyfikacje. Dodawane są nowe polecenia i funkcje. Specyfikacja HTML zmierza do tego, aby strony pisane w tym języku były tak samo prezentowane w różnych przeglądarkach i na różnych komputerach.
-                    Mimo standaryzacji, niektóre przeglądarki inaczej interpretują te same polecenia. Aby uniknąć błędów autorzy stron muszą zapoznać się z różnicami w składni. Opisy znaczników są tu: Tagi HTML Znajomość HTML-a jest potrzebna nawet wtedy,
-                    gdy tworzy się strony w edytorach graficznych, typu FrontPage. Edytor taki tworzy dokument HTML podobnie jak w Wordzie, można pisać tekst i osadzać obrazki bez wnikania w kod źródłowy. Jednak źródło HTML zawiera nadmiarowy kod, niepotrzebne
-                    elementy formatowania, co powoduje, że strona się wolno ładuje. Autor strony ma pełną możliwość edycji tylko na poziomie kodu źródłowego HTML. W FrontPage można się przełączyć, wybierając odpowiednią zakładkę HTML. Do edycji lepiej
-                    jest użyć gotowego edytora HTML z kolorowaniem składni. Programiści chętnie wybierają polski program Pajączek.
-                </p>
-            </section>
-            <section class="home__pamietniczek">
-                <h3 class="home__pamietniczek--header">
-                    Czy nagrywanie szkolenia to prosta sprawa?
-                </h3>
-                <p class="home__pamiatniczek--paragraph">
-                    Od czasu gdy pojawiły się techniczne możliwości ludzie utrwalają istotne chwile ze swojego życia na zdjęciach i pod postacią filmów. Obecnie technika jest tak zaawansowana, że przy pomocy zwykłych smartfonów można nagrywać i fotografować z dużo lepszymi
-                    parametrami, niż przy użyciu zaawansowanych i drogich sprzętów przed kilkunastu laty. Postęp w fotografii i nagrywaniu obrazów jest bardzo duży, widać to dobrze po parametrach urządzeń do tego służących. Co roku zwiększa się rozdzielczość
-                    nagrywanych filmów oraz matryc, oprogramowanie ma coraz bardziej wydajne algorytmy, więc i użytkownikom jest coraz prościej. Bardzo wiele osób wykorzystuje do tych celów smarfony, ograniczając się wtedy do noszenia jednego, wielofunkcyjnego
-                    urządzenia, za pomocą którego można telefonować, robić zdjęcia, kręcić filmy a w razie potrzeby też zagrać. Jeśli jednak ktoś będzie potrzebował sprzętu bardziej zaawansowanego, to również znajdzie spory jego wybór w elektronicznych
-                    sklepach.
-                </p>
-            </section>
-            <section class="home__pamietniczek">
-                <h3 class="home__pamietniczek--header home__pamietniczek--header-js">
-                    Modyfikacja DOM
-                </h3>
-            </section>
+                    <p class="home__pamiatniczek--paragraph">
+                        HTML (HyperText Markup Language) to język opisu strony. Dokument HTML jest plikiem tekstowym, który oprócz tekstu widocznego na stronie zawiera znaczniki zawierające polecenia dla przeglądarek klienta, opisują one wygląd i funkcje elementów strony web.
+                        Język HTML przechodził już wielokrotnie modyfikacje. Dodawane są nowe polecenia i funkcje. Specyfikacja HTML zmierza do tego, aby strony pisane w tym języku były tak samo prezentowane w różnych przeglądarkach i na różnych komputerach.
+                        Mimo standaryzacji, niektóre przeglądarki inaczej interpretują te same polecenia. Aby uniknąć błędów autorzy stron muszą zapoznać się z różnicami w składni. Opisy znaczników są tu: Tagi HTML Znajomość HTML-a jest potrzebna nawet
+                        wtedy, gdy tworzy się strony w edytorach graficznych, typu FrontPage. Edytor taki tworzy dokument HTML podobnie jak w Wordzie, można pisać tekst i osadzać obrazki bez wnikania w kod źródłowy. Jednak źródło HTML zawiera nadmiarowy
+                        kod, niepotrzebne elementy formatowania, co powoduje, że strona się wolno ładuje. Autor strony ma pełną możliwość edycji tylko na poziomie kodu źródłowego HTML. W FrontPage można się przełączyć, wybierając odpowiednią zakładkę
+                        HTML. Do edycji lepiej jest użyć gotowego edytora HTML z kolorowaniem składni. Programiści chętnie wybierają polski program Pajączek.
+                    </p>
+                </section>
+                <section class="home__pamietniczek">
+                    <h3 class="home__pamietniczek--header">
+                        Czy nagrywanie szkolenia to prosta sprawa?
+                    </h3>
+                    <p class="home__pamiatniczek--paragraph">
+                        Od czasu gdy pojawiły się techniczne możliwości ludzie utrwalają istotne chwile ze swojego życia na zdjęciach i pod postacią filmów. Obecnie technika jest tak zaawansowana, że przy pomocy zwykłych smartfonów można nagrywać i fotografować z dużo lepszymi
+                        parametrami, niż przy użyciu zaawansowanych i drogich sprzętów przed kilkunastu laty. Postęp w fotografii i nagrywaniu obrazów jest bardzo duży, widać to dobrze po parametrach urządzeń do tego służących. Co roku zwiększa się rozdzielczość
+                        nagrywanych filmów oraz matryc, oprogramowanie ma coraz bardziej wydajne algorytmy, więc i użytkownikom jest coraz prościej. Bardzo wiele osób wykorzystuje do tych celów smarfony, ograniczając się wtedy do noszenia jednego, wielofunkcyjnego
+                        urządzenia, za pomocą którego można telefonować, robić zdjęcia, kręcić filmy a w razie potrzeby też zagrać. Jeśli jednak ktoś będzie potrzebował sprzętu bardziej zaawansowanego, to również znajdzie spory jego wybór w elektronicznych
+                        sklepach.
+                    </p>
+                </section>
+                <section class="home__pamietniczek">
+                    <h3 class="home__pamietniczek--header home__pamietniczek--header-js">
+                        Modyfikacja DOM
+                    </h3>
+                </section>
+            </div>
         </section>
 
         <footer>

@@ -9,6 +9,13 @@ body {
     color: #1460aa
 }
 
+.home_grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-column-gap: 16px;
+    grid-row-gap: 16px;
+}
+
 .header {
     color: yellow
 }
@@ -117,4 +124,11 @@ main {
     top: 30px;
     background: brown;
     padding: 10px;
+}
+
+@media screen and (max-width: 640px) {
+    .home_grid {
+        grid-template-columns: 1fr;
+        background: red;
+    }
 }
