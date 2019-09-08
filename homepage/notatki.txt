@@ -116,6 +116,11 @@ Lokcja 6.01 - Formularze
             min - minimalna warosc suwaka            
         typ submit - przycisk do wysyłaniaa formularza
             action - adres uslugi do ktorej wysyłany jest formularz
+        typ file - sluzy do wybirania pliku do wyslania
+            enctype - okreslamy typ wysylanych plikow, bez tego moze wysylanie plikow nie działc
+        required - okresla wymagane pozycje form. Kiedy pole jest rquired jest aktywna automatycznie uruchamiana
+                   walidacja zalezna od typu np. ma mail, lub z pola pattern
+        pattern - walidacja uruchamiana dla pol required
     <label - legenda pozwala
         for - nzwa inputu
 
@@ -126,8 +131,38 @@ Lokcja 6.01 - Formularze
         <option - wartosci do wyburu w select (domyślnie pierwszy option jest zaznaczony)  
 
     <textarea - input dla duzego teksu (domyslnie skalowalny). Nie posiada atrybutu walue, bierze tekst ze srodka. 
-                Domyślna metoda to GET
+                Domyślna metoda to GET.
 
 Dobra praktyką jest otagowanie pojedynczych par input label w znacznik <p> (po kliknieciu w label uzytkownik jet przenoszony do inputa)
 Radiobuttony grupujemy za pomocą name jeżeli dwa radiobuttony
 mają to samo 'name' można wybrac jeden sposrod nich, jezeli name jest rozne mozna wybac wiele radiobuttonow
+
+
+Lekcja 6.03 CSS Grid
+Grid definiuje na stałe zdefiniowane wartosci nie kurczy domyslnjie kolumn/wierszy.
+Grid nie zastępuje flexboxa ale świetnie sie z nim uzupełnia. Gridem budować layout, flexboxa uzywac do pozycjonowania elementów wewnątrz grid.
+    Grid Line - numeracja od 1.
+    Grid Cell - komórka tabeli
+    Grid Track (jako wiersz i kolumna) 
+    Grid Area - W jakich obszarach znajduje sie grid Cell
+    Grid Container - pudełko na grida
+
+
+    display:grid -
+    grid-template-columns: 100px 100px; - oznacza dwie kolumny o szerokości 100px w [] można nazywac kolumny]
+    grid-template-rows: 100px 300px; - oznacza dwa wiersze o podanej wysokosci
+    jednostka "fr" - ułamek wolnej przestrzeni np: grid-template-rows: 1fr 3fr; oznacza
+    grid-template-rows: 1/4 3/4; wolnej przestrzeni
+    repeat(4,1fr) - oznacza 1fr 1fr 1fr 1fr
+    grid-column-gap: 16px - definuje odstęp poniedzy kolumnani
+    grid-row-gap: 16px - definuje odstęp poniedzy wiersami
+    minmax(min, max) : element nie bedzie mniejszy i nie większy niż np. (minmax(200, 1fr))
+    grid-template-areas: "header header header"
+                         "content . menu"
+                         "footer footer footer"    
+
+    grid-area:   przypisywanie do konkretnej własności z 'grid-template-areas' danego elementu opisanego definiowanym stylem
+                <row-start
+                <row-end
+                <column-start
+                <column-end
