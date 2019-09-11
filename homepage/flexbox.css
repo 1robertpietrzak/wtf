@@ -64,3 +64,11 @@ html {
 *:before {
     box-sizing: inherit;
 }
+
+@media screen and (max-width: 420px) {
+    .login__label {
+        /*border: 3px solid #22c069;*/
+        text-align: center;
+        width: 100px;
+    }
+}
