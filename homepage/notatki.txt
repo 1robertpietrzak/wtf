@@ -201,4 +201,34 @@ element.classList.
                     toggle
                     contains
 
+Lekcaj 7.03 Pseudoelementy, pseudoselektory
+Pseudoelenty
+::before :: after
+element tworzony bezposrenio po lub przed danym elementem
+zeby wyświetlał sie taki pseudoselektor powinien byc chociaz pusty znacznik content:""
 
+Pseudoklasa - sluzo do kreslenia stanu elementu
+:hover - akcja po najechaniu np. (zmiana koloru linku po najechaniu na obiekt .stylcss:hover)
+:visited - aktywuje sie kiedy pole zostało użyte
+:focus - działa na inpucie kiedy jest wybrany
+:first-child - zadziała kiedy dany element bedzie pierwszym dzieckiem nadrzędnego
+:last-child - tak jak wyżej tylko dla ostatniego
+css1:not(css2) - wszystko co ma klase css1 ale nie ma klasy css2 ma dostac ten element
+
+
+
+Lekcja 7.04 SASS 
+Sass to jeden z procesorow css.
+Słuzy do uporzadkowania cssow w projekcje. Upraszcza probelmy z błaganem. 
+SASS vs SCSS - sas ma wlasna skladnie oraz skladnie SCSS. skladnia SASSA patrzy na wciecia. w kursie uzywana bedzie skladnia SCSS
+ Zmienne w SASS definiujemy za pomoca $
+ @mixin - definiowanie klas styli np.
+ @mixin border($color, $radius) {
+     background: $color;
+     background-radius: $radius;
+ }
+
+ -- uzycie
+ .main {
+     @include border;
+ }
